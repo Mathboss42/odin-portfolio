@@ -114,8 +114,24 @@ main {
 .project-header {
     font-size: 28px;
     display: flex;
-    align-items: center;
-    vertical-align: bottom;
+    justify-content: space-between;
+}
+
+.project-header > .links {
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    font-size: 0;
+    gap: 20px;
+}
+
+.project-header, .project-desc {
+    padding: 24px;
+}
+
+.project-desc {
+    font-family: Roboto-Bold, sans-serif;
+    color: #979797;
 }
 
 .project-header img, .project-header i {
@@ -124,14 +140,23 @@ main {
 }
 
 .project {
+    overflow: hidden;
     height: 600px;
+    box-shadow: 0px 5px 10px -3px rgba(100, 112, 117, 0.75);
+    -webkit-box-shadow: 0px 5px 10px -3px rgba(100, 112, 117, 0.75);
+    -moz-box-shadow: 0px 5px 10px -3px rgba(100, 112, 117, 0.75);
+}
+
+.project > img {
+    width: 100%;
+    object-fit: contain;
 }
 
 .grid-container {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fill, 500px);
-    gap: 40px;
+    gap: 64px;
     justify-content: space-between;
 }
 
