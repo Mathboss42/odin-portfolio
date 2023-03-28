@@ -197,3 +197,91 @@ footer {
     font-size: 24px;
     color: white;
 }
+
+
+@media (max-width: 1400px) {
+    .image-container {
+        margin-right: 32px;
+        float: left;
+        position: relative;
+    }
+
+    .image-container > h1 {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: translate(0%, 0%);
+        width: 100%;
+        font-size: 48px;
+        color: white;
+        padding: 16px;
+    }
+
+    header {
+        position: relative;
+        padding: 96px;
+    }
+
+    header .description {
+        margin-top: 128px;
+        margin-left: 128px;
+        max-height: 70%;
+        display: block;
+        padding: 32px 24px;
+        height: auto;
+        background-color: white;
+    }
+
+    .description p {
+        font-size: 24px;
+        font-family: Roboto;
+        color: #979797;
+    }
+
+    .description h2 {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    header {
+        display: block;
+    }
+
+    .banner {
+        top: 0;
+        left: 0;
+        transform: rotate(-10deg) translate(-25%, -60%);
+        z-index: -1;
+        height: 150%;
+        width: 200%;
+    }
+
+    header img {
+        max-width: 400px;
+    }
+
+    footer img {
+        width: min(40vw, 300px);
+        object-fit: contain;
+    }
+
+    .footer-text {
+        margin-right: 24px;
+    }
+    
+    * {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, min(40vw, 400px));
+    }
+    
+    main {
+        padding: 32px;
+    }
+}
